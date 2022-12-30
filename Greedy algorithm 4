@@ -1,0 +1,25 @@
+#car feuling problem with minimum number of refills
+#location = 0
+d = int(input())
+m = int(input())
+stop = list(map(int,input().split()))
+location = 0
+count = 0
+if location + m > d:
+    print("0")
+if len(stop) == 0 and stop[0] > m:
+    print("none")
+stop.append(d)
+while(len(stop) != 0):
+    if stop[0] - location <= m:
+        print(stop)
+        laststop = stop[0]
+        stop.pop(0)
+    else:
+        location = laststop
+        print(location)
+        count = count + 1
+
+print(count)
+
+            
