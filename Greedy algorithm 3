@@ -1,0 +1,21 @@
+# money input and output minimum number of coints with denominations 1,5,10 that changes money 
+numcoins = 0
+money = 28
+while(money != 0):
+    if money >= 10:
+        money = money - 10
+        print(money)
+        numcoins = numcoins + 1
+    elif money >= 5 and money <= 10:
+        money = money - 5
+        numcoins = numcoins + 1
+        print(money)
+    elif money >=  1 and money <= 5:
+        money = money - 1
+        numcoins = numcoins + 1
+        print(money)
+print(numcoins)
+
+
+
+        
