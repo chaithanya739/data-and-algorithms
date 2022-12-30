@@ -1,0 +1,9 @@
+#fibanocci new algorithm
+x = []
+x.append(int(0))
+x.append(int(1))
+n = input()
+for i in range(2,int(n)):
+    k = x[i-1] + x[i-2]
+    x.append(int(k))
+print(x)
