@@ -1,0 +1,13 @@
+def GCD(x,y):
+    if y == 0:
+        print(x)
+    else:
+        x1 = y
+        #print(x)
+        y1 = x%y
+        #print(y1)
+        GCD(x1,y1)
+
+x = 3918848
+y = 1653264
+GCD(x,y) 
