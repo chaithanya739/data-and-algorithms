@@ -1,0 +1,19 @@
+#input sequence 2,3,9,2,2 output should be 93222
+
+x = list(map(int,input().split()))
+print(x)
+y = ""
+def max_val(k):
+    result = 0
+    for i in range(len(k)):
+        if int(k[i]) > result:
+            result = int(x[i])
+    return result
+
+while(x):
+    h = max_val(x)
+    print(h)
+    y = y + str(h)
+    x.remove(h)
+
+print(y)
